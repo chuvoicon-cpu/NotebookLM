@@ -1,0 +1,2 @@
+# NotebookLM
+Workspace upload initialization
