@@ -1,0 +1,15 @@
+[Unit]
+Description=RAG / Open Notebook Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/i/Documents/open-notebook-main (1)/open-notebook-main
+ExecStart=/bin/bash "/home/i/Documents/open-notebook-main (1)/open-notebook-main/scripts/autostart/start-local.sh"
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
